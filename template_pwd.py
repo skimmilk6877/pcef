@@ -9,7 +9,8 @@
 import os
 import sys
 from commands import getstatusoutput
-import pcef
+from lib.utils.timeUtils import TimeUtils
+
 
 ##################Script static parameters (including the relative positions of folders, etc.)##################
 #Script directory
@@ -27,3 +28,15 @@ MIRROR_PARALLEL_SMALL=20
 
 SOFTWARE_BASE='/opt'
 
+TIMER_LIST=[]
+import time
+
+timer = TimeUtils()
+timer.timerAndPrint()
+time.sleep(5)
+timer.timerAndPrint()
+time.sleep(5)
+timer.timerAndPrint()
+time.sleep(5)
+timer.timerAndPrint()
+timer.printTotalTime()
